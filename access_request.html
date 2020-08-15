@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms: Access Request</title>
+        <meta name="description" content="This is the log in access request page" />
+        <meta name="robots" content="noindex nofollow" />
+        <meta http-equiv="author" content="Matthew Gajewski" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <link href="css/style1.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9lfjh" crossorigin="anonynous"
+    </head>
+    <body>
+
+        <ul>
+            <li class="h_menu"><a class="menu" href="index.html">Home</a> </li>
+            <li class="h_menu"><a class="menu" href="about.html">About ProjectIV </a> </li>
+            <li class="h_menu"><a class="menu" href="breakdown.html">Breakdown</a></li>
+            <li class="h_menu"><a class="menu" href="logbook.html">Log Book</a></li>
+            <li class="h_menu"><a class="menu" href="login.html">Log In</a></li>
+            <li class="h_menu"><a class="menu" href="access_request.html">Access Request Page</a></li>
+        </ul>
+
+        <h1>Access Request</h1>
+        <form action="php/access_req.php" method="POST" id="access">
+            <fieldset>
+                <legend>Required Information</legend>
+                <div>
+                <p><label for="fname" class="text_label">First Name: </label></p>
+                <input id="fname" class="text_input" type="text" name="firstname" required/>
+                </div>
+                
+                <div>
+                <p><label for="lname" class="text_label">Last Name:</label></p>
+                <input id="lname" class="text_input" type="text" name="lastname" required/>
+                </div>
+
+                <div?>
+                <p><label for='eaddress' class="text_label">Email Address: </label></p>
+                <input id="eaddress" class="text_input" type="email" name="email" required/>
+                </div>
+
+                <div>
+                <label><input type="radio" name="fac_or_student" value="faculty" /> Faculty </label>
+                <label><input type="radio" name="fac_or_student" value="student" /> Student </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Optional Information</legend>
+
+                <p><label>Birth Date: <input type="date" name="birthday"/></label></p>
+                <p><label>Are you a licensed driver?
+                <select name="drives_car">
+                    <option value="no_answer" selected></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+               </label></p>
+            <!-- 
+                <p>I currently ...(check all that apply)</p>
+              <label><input type="checkbox" name="involvement" value="none" /> Have no involvment in Project </label> <br />
+                <label><input type="checkbox" name="involvement" value="instructor" /> An instructor in this Project </label> <br />
+                <label><input type="checkbox" name="involvement" value="instructor_other" /> An instructor in another Project </label> <br />
+                <label><input type="checkbox" name="involvement" value="student" /> A student in this Project </label> <br />
+                <label><input type="checkbox" name="involvement" value="student_other" /> A student in another Project </label> <br />
+                <label><input type="checkbox" name="involvement" value="admin" /> A College Administrator </label>  <br />
+                <label><input type="checkbox" name="involvement" value="external" /> An external reviewer </label> <br />
+                -->
+
+                <p>Why should you be able to access a login?</p>
+                <textarea class="txtareas" name="txtarea">Enter details here, please</textarea>
+                <br />
+                
+                <label><input id= "submit" type="submit" value="Submit Access Request" /> </label>
+            </fieldset>
+        </form>
+       
+
+        <a class="menu" href="#top">Top of Page</a><br />
+        Copyright &copy 2020 Matthew Gajewski
+    </body>
+
+
+</html>

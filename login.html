@@ -2,10 +2,39 @@
 <html>
     <head>
         <title>Forms: Login Page</title>
+        <meta name="description" content="This is the log in page of the Project" />
+        <meta name="robots" content="noindex nofollow" />
+        <meta http-equiv="author" content="Matthew Gajewski" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <link href="css/style1.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9lfjh" crossorigin="anonynous"
     </head>
     <body>
-        <form action="php/login.php" id="login">
-            <p>Form Content Goes Here</p>
+        <ul>
+            <li class="h_menu"><a class="menu" href="index.html">Home</a> </li>
+            <li class="h_menu"><a class="menu" href="about.html">About ProjectIV </a> </li>
+            <li class="h_menu"><a class="menu" href="breakdown.html">Breakdown</a></li>
+            <li class="h_menu"><a class="menu" href="logbook.html">Log Book</a></li>
+            <li class="h_menu"><a class="menu" href="login.html">Log In</a></li>
+            <li class="h_menu"><a class="menu" href="access_request.html">Access Request Page</a></li>
+        </ul>
+        <form action="php/authenticate.php" method="POST" id="login">
+            <h1 id="top">Please Sign In</h1>
+            <div>
+                <label for="user" class="text_label">Username:</label> 
+                <input id="user" class="text_input" type="text" name="username" required/>
+            </div>
+
+            <div>
+                <label for="pass" class="text_label">Password:</label>
+                <input id="pass" class="text_input" type="password" name="password" required />
+            </div>
+            
+            <div><input id="submit" type="submit" value="Log in" /></div>
+            <div><a href="access_request.html">Request a Username and password</a></div>
         </form>
+        <br />
+        <a class="menu" href="#top">Top of Page</a><br />
+        Copyright &copy 2020 Matthew Gajewski
     </body>
 </html>

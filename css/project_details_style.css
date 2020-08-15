@@ -1,0 +1,39 @@
+body {font-family: Georgia, serif;
+max-width: 950px;
+padding: 10px;
+border: 2px solid black;
+margin: 1px auto 1px auto;
+}
+
+p, ul, ol {font-size: 100%;
+    line-height: 20px;
+    text-align: justify;
+}
+
+p {text-indent: 15px;}
+
+h1 {font-size: 160%;}
+h2 {font-size: 125%;}
+
+
+img {height: 300px;
+border: 2px solid blue;
+display: block;
+margin: 0px auto 0px auto;
+box-shadow: 10px 10px 5px gray;
+}
+
+figure {border: 2px solid green;
+    border-radius: 25px;
+}
+
+figcaption {font-size: 90%;
+    text-align: center;
+    font-style: italic;
+}
+
+.mkunderlined {text-decoration: underline;}
+.mkbold {font-weight: bold;}
+#hcs12, #can {font-weight: bold;}
+
+

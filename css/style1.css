@@ -1,0 +1,66 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif;}
+
+h1 {color: blue;
+    font-family: verdana;
+    }
+
+h2 {color:gray}
+
+a:link.menu{
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited.menu{
+    background-color: white;
+    color: green;
+    text-decoration: none;
+}
+a:hover.menu{
+    font-weight: bold;
+    background-color: gray;
+}
+a:active.menu{
+    font-weight: bold;
+    color: yellow;
+}
+
+li.h_menu{display: inline; }
+
+.text_label {
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding: 0px 10px 0px 0px;
+}
+.text_input {
+    width: 150px;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+
+div {padding: 10px 0px 10px 0px;
+width: 282px;}
+
+fieldset {
+    width: 500px;
+    color: blue;
+}
+#submit {float: right;
+    background-color: blue;
+    color: yellow;
+}
+/*
+.rotate {
+    transform: rotate(270deg);
+}
+*/
+
+.txtareas {background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50px;
+    height: 100px;
+    width: 300px;
+}
